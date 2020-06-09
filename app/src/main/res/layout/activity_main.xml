@@ -24,12 +24,13 @@
             android:gravity="center">
 
             <Button
-                android:id="@+id/first"
+                android:id="@+id/btn_login"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center_horizontal"
                 android:layout_marginTop="30dp"
-                android:background="@color/colorPrimary"
+                android:background="@android:drawable/button_onoff_indicator_on"
+                android:onClick="btnClick"
                 android:text="@string/login"
                 android:textColor="@color/white"
                 android:textSize="20sp" />
@@ -42,16 +43,15 @@
             android:gravity="center">
 
             <Button
-                android:id="@+id/register"
-                android:layout_marginTop="30dp"
-                android:textSize="20sp"
-                android:layout_gravity="center_horizontal"
+                android:id="@+id/btn_register"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="30dp"
+                android:background="@android:drawable/button_onoff_indicator_off"
                 android:text="注册"
-                android:background="@color/white"
-                android:textColor="@color/colorPrimary"
-                />
+                android:textColor="@android:color/holo_green_light"
+                android:textSize="20sp" />
         </LinearLayout>
     </LinearLayout>
 </LinearLayout>
