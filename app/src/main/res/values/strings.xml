@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Date</string>
+    <string name="hint_username">用户名</string>
+    <string name="sign">登录</string>
+    <string name="hint_pass">密码</string>
+    <string name="login">登录</string>
+</resources>
