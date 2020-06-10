@@ -49,6 +49,7 @@
                 android:layout_gravity="center_horizontal"
                 android:layout_marginTop="30dp"
                 android:background="@android:drawable/button_onoff_indicator_off"
+                android:onClick="btnClick2"
                 android:text="注册"
                 android:textColor="@android:color/holo_green_light"
                 android:textSize="20sp" />

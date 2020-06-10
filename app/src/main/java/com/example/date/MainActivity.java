@@ -25,4 +25,12 @@ public class MainActivity extends AppCompatActivity {
         Intent config = new Intent(this, LoginActivity.class);
         startActivity(config);
     }
+    public void btnClick2 (View btn2){
+        openConfig2();
+
+    }
+    private void openConfig2() {
+        Intent config2 = new Intent(this, RegisterActivity.class);
+        startActivity(config2);
+    }
 }

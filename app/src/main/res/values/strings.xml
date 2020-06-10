@@ -4,4 +4,8 @@
     <string name="sign">登录</string>
     <string name="hint_pass">密码</string>
     <string name="login">登录</string>
+    <string name="hint_uers">请输入用户名</string>
+    <string name="hint_passwords">请输入密码</string>
+    <string name="hint_again">请再次输入密码</string>
+    <string name="register">注册</string>
 </resources>
