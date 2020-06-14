@@ -16,15 +16,22 @@ import android.widget.Toast;
 public class LoginActivity extends AppCompatActivity {
     private Button btn_login;//登录按钮
     private final String TAG = "Rate";
-    private String uerName,password,spPsw,uer,pas;//获取的用户名，密码，加密密码
-    EditText user_input,password_input;//编辑框
+    private String uerName,password,uer,pas;
+    EditText user_input,password_input;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login);
-//设置此界面为竖屏
-        //setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_PORTRAIT);
+        Button btn3 =(Button)findViewById(R.id.button2);
         init();
+    }
+    public void btnClick2 (View btn3){
+        openConfig2();
+
+    }
+    private void openConfig2() {
+        Intent config2 = new Intent(this, RegisterActivity.class);
+        startActivity(config2);
     }
 
     private void init() {
@@ -52,8 +59,10 @@ public class LoginActivity extends AppCompatActivity {
                     return;
                     // md5Psw.equals(); 判断，输入的密码加密后，是否与保存在SharedPreferences中一致
                 }else if(password.equals(pas)&& uerName.equals(uer)){
-                    startActivity(new Intent(LoginActivity.this, UserActivity.class));
-                    return;
+                    Intent list = new Intent(LoginActivity.this, UserActivity.class);
+                    startActivity(list);
+
+
                 }else if((pas!=null||!uerName.equals(uer)||!password.equals(pas))){
                     Toast.makeText(LoginActivity.this, "输入的用户名和密码不一致", Toast.LENGTH_SHORT).show();
                     return;
