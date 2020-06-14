@@ -15,4 +15,12 @@
     <string name="btn_back">返回注册</string>
     <string name="btn_my">记录心得</string>
     <string name="menu_add">添加感想</string>
+    <string name="shou">新增心得</string>
+    <string name="inp">添加心得：</string>
+    <string name="btn_w">完成</string>
+    <string name="lst">我的心得</string>
+    <string name="book1">上海书评</string>
+    <string name="boo">我的记录</string>
+    <string name="book2">晶报•深港书评</string>
+    <string name="book3">新京报•书评周刊</string>
 </resources>

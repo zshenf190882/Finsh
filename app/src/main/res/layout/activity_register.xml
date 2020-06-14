@@ -4,70 +4,64 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@mipmap/ll"
+    android:background="@mipmap/zhuc"
     android:orientation="vertical"
     tools:context=".RegisterActivity">
 
 
-    <LinearLayout
+    <EditText
+        android:id="@+id/user"
+        android:layout_width="wrap_content"
+        android:layout_height="47dp"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="200dp"
+        android:layout_marginRight="15dp"
+        android:background="@mipmap/aaaa"
+        android:gravity="center"
+        android:hint="@string/hint_uers"
+        android:textColor="@color/colorPrimary"
+        android:textSize="20sp" />
+
+    <EditText
+        android:id="@+id/password"
+        android:layout_width="wrap_content"
+        android:layout_height="56dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="15dp"
+        android:background="@mipmap/aaaa"
+        android:gravity="center"
+        android:hint="@string/hint_passwords"
+        android:inputType="textPassword"
+        android:password="true"
+        android:textSize="20sp" />
+
+    <EditText
+        android:id="@+id/password1"
+        android:layout_width="wrap_content"
+        android:layout_height="51dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="15dp"
+        android:background="@mipmap/aaaa"
+        android:gravity="center"
+        android:hint="@string/hint_again"
+        android:inputType="textPassword"
+        android:password="true"
+        android:textSize="20sp" />
+
+    <Button
+        android:id="@+id/btn_register"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_marginTop="100dp"
-        android:orientation="vertical">
+        android:layout_height="48dp"
+        android:layout_below="@id/password_input"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:background="@mipmap/ty"
+        android:text="@string/register"
+        android:textColor="@android:color/holo_purple"
+        android:textSize="25sp" />
 
-        <EditText
-            android:id="@+id/user"
-            android:layout_width="wrap_content"
-            android:layout_height="47dp"
-            android:layout_centerVertical="true"
-            android:layout_marginLeft="15dp"
-            android:layout_marginTop="40dp"
-            android:layout_marginRight="15dp"
-            android:background="@mipmap/ii"
-            android:gravity="center"
-            android:hint="@string/hint_uers"
-            android:textColor="@color/colorPrimary"
-            android:textSize="20sp" />
-
-        <EditText
-            android:id="@+id/password"
-            android:layout_width="wrap_content"
-            android:layout_height="56dp"
-            android:layout_marginLeft="15dp"
-            android:layout_marginTop="20dp"
-            android:layout_marginRight="15dp"
-            android:background="@mipmap/ii"
-            android:gravity="center"
-            android:hint="@string/hint_passwords"
-            android:inputType="textPassword"
-            android:password="true"
-            android:textSize="20sp" />
-
-        <EditText
-            android:id="@+id/password1"
-            android:layout_width="wrap_content"
-            android:layout_height="51dp"
-            android:layout_marginLeft="15dp"
-            android:layout_marginTop="20dp"
-            android:layout_marginRight="15dp"
-            android:background="@mipmap/ii"
-            android:gravity="center"
-            android:hint="@string/hint_again"
-            android:inputType="textPassword"
-            android:password="true"
-            android:textSize="20sp" />
-
-        <Button
-            android:id="@+id/btn_register"
-            android:layout_width="match_parent"
-            android:layout_height="48dp"
-            android:layout_below="@id/password_input"
-            android:layout_centerHorizontal="true"
-            android:layout_marginTop="20dp"
-            android:background="@mipmap/ii"
-            android:text="@string/register"
-            android:textColor="@android:color/holo_purple"
-            android:textSize="25sp" />
-    </LinearLayout>
 
 </LinearLayout>

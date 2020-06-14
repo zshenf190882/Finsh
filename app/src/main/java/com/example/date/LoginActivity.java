@@ -14,7 +14,7 @@ import android.widget.EditText;
 import android.widget.Toast;
 
 public class LoginActivity extends AppCompatActivity {
-    private Button btn_login;//登录按钮
+    private Button btn;
     private final String TAG = "Rate";
     private String uerName,password,uer,pas;
     EditText user_input,password_input;
@@ -36,28 +36,28 @@ public class LoginActivity extends AppCompatActivity {
 
     private void init() {
 
-        btn_login=findViewById(R.id.btn_login);
+        btn=findViewById(R.id.btn_login);
         user_input=findViewById(R.id.user_input);
         password_input=findViewById(R.id.password_input);
 
-        btn_login.setOnClickListener(new View.OnClickListener() {
+        btn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                //开始登录，获取用户名和密码 getText().toString().trim();
+
                 uerName=user_input.getText().toString().trim();
                 password=password_input.getText().toString().trim();
                 SharedPreferences sp=getSharedPreferences("loginInfo", MODE_PRIVATE);
                 uer=sp.getString("userName","");
                 pas=sp.getString("psw","");
-                Log.i(TAG,pas);
-                Log.i(TAG,uer);
+//                Log.i(TAG,pas);
+//                Log.i(TAG,uer);
                 if(uerName.length()<=0){
                     Toast.makeText(LoginActivity.this, "请输入用户名", Toast.LENGTH_SHORT).show();
                     return;
                 }else if(password.length()<=0){
                     Toast.makeText(LoginActivity.this, "请输入密码", Toast.LENGTH_SHORT).show();
                     return;
-                    // md5Psw.equals(); 判断，输入的密码加密后，是否与保存在SharedPreferences中一致
+
                 }else if(password.equals(pas)&& uerName.equals(uer)){
                     Intent list = new Intent(LoginActivity.this, UserActivity.class);
                     startActivity(list);
@@ -75,9 +75,5 @@ public class LoginActivity extends AppCompatActivity {
 
 }
 
-   // @Override
-//    protected void onCreate(Bundle savedInstanceState) {
-//        super.onCreate(savedInstanceState);
-//        setContentView(R.layout.activity_login);
-//    }
+
 

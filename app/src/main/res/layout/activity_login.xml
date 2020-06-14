@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@mipmap/ff"
+    android:background="@mipmap/deng"
     tools:context=".LoginActivity">
 
     <EditText
@@ -14,7 +14,7 @@
         android:layout_centerVertical="true"
         android:layout_marginLeft="15dp"
         android:layout_marginRight="15dp"
-        android:background="@mipmap/ii"
+        android:background="@mipmap/aaaa"
         android:gravity="center"
         android:hint="@string/hint_username"
         android:textSize="20sp" />
@@ -27,7 +27,7 @@
         android:layout_marginLeft="15dp"
         android:layout_marginTop="20dp"
         android:layout_marginRight="15dp"
-        android:background="@mipmap/ii"
+        android:background="@mipmap/aaaa"
         android:gravity="center"
         android:hint="@string/hint_pass"
         android:inputType="textPassword"
@@ -41,15 +41,16 @@
         android:layout_below="@id/password_input"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="20dp"
-        android:background="@mipmap/ii"
+        android:background="@mipmap/ty"
         android:text="@string/login"
-        android:textColor="@color/white"
+        android:textColor="@color/pink"
         android:textSize="20sp" />
 
     <Button
         android:id="@+id/button2"
-        android:layout_width="167dp"
-        android:layout_height="48dp"
+        android:layout_width="186dp"
+        android:layout_height="47dp"
+        android:layout_below="@+id/btn_login"
         android:layout_alignParentStart="true"
         android:layout_alignParentLeft="true"
         android:layout_alignParentEnd="true"
@@ -57,13 +58,14 @@
         android:layout_alignParentBottom="true"
         android:layout_marginStart="122dp"
         android:layout_marginLeft="122dp"
+        android:layout_marginTop="49dp"
         android:layout_marginEnd="123dp"
         android:layout_marginRight="123dp"
-        android:layout_marginBottom="114dp"
-        android:background="@mipmap/ii"
+        android:layout_marginBottom="147dp"
+        android:background="@mipmap/ty"
         android:onClick="btnClick2"
         android:text="Button"
-        android:textColor="@color/white"
+        android:textColor="@color/pink"
         tools:text="@string/btn_back" />
 
 </RelativeLayout>

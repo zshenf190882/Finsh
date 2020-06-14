@@ -1,5 +1,7 @@
 package com.example.date;
 
+import java.util.HashMap;
+
 public class RateItem {
     private int id;
     private String curName;
@@ -30,9 +32,7 @@ public class RateItem {
         this.id = id;
     }
 
-    public String getCurName() {
-        return curName;
-    }
+
 
     public void setCurName(String curName) {
         this.curName = curName;
@@ -51,5 +51,9 @@ public class RateItem {
 
     public void setCurRate(String curRate) {
         this.curRate = curRate;
+    }
+
+    public String getCurName() {
+        return curName;
     }
 }
