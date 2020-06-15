@@ -22,16 +22,16 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:hint="@string/title"
-        android:textColor="@color/colorPrimary"
+        android:textColor="@color/design_default_color_secondary_variant"
         android:textSize="30dp" />
 
 
     <EditText
         android:id="@+id/inp2"
-        android:layout_width="match_parent"
-        android:layout_height="300dp"
+        android:layout_width="442dp"
+        android:layout_height="86dp"
         android:hint="@string/content"
-        android:textColor="@color/colorAccent"
+        android:textColor="@color/design_default_color_on_secondary"
         android:textSize="20dp" />
 
     <Button

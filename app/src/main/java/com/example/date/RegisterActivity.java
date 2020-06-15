@@ -64,9 +64,7 @@ public class RegisterActivity extends AppCompatActivity {
                     editor.commit();
                     Intent data = new Intent(RegisterActivity.this,MainActivity.class);
                     startActivity(data);
-//                    data.putExtra("userName", userName);
-//                    setResult(RESULT_OK, data);
-//                    RegisterActivity.this.finish();
+//
                 }
             }
         });
