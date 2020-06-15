@@ -66,10 +66,10 @@ public class Reader3Activity extends ListActivity implements Runnable, AdapterVi
 
     private void initListView() {
         listItems = new ArrayList<HashMap<String, String>>();
-        for (int i = 0; i < 10; i++) {
+        for (int i = 0; i < 20; i++) {
             HashMap<String, String> map = new HashMap<String, String>();
-            map.put("ItemTitle", "Rate:  " + i);//标题文字
-            map.put("ItemDetail", "detail" + i);//详细描述
+            map.put("ItemTitle", "content:  " + i);//标题文字
+            map.put("ItemDetail", "url" + i);//详细描述
             listItems.add(map);
         }
         //生成适配器的Item和动态数组对应的元素

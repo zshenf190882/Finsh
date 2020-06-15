@@ -29,17 +29,17 @@ public class NoteActivity extends AppCompatActivity implements AdapterView.OnIte
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_note);
         ListView listView = (ListView) findViewById(R.id.notelist);
-        SharedPreferences sp = getSharedPreferences("mydate", MODE_PRIVATE);
-        content = sp.getString("content", "");
-        date1 = sp.getString("date", "");
-        Log.i(TAG, "onCreate: content = " + content);
-        Log.i(TAG, "onCreate: url= " + date1);
+//        SharedPreferences sp = getSharedPreferences("mydate", MODE_PRIVATE);
+//        content = sp.getString("content", "");
+//        date1 = sp.getString("date", "");
+//        Log.i(TAG, "onCreate: content = " + content);
+//        Log.i(TAG, "onCreate: url= " + date1);
 
         //data.add(content+"-->心得："+date1);
-        rateList.add(new RateItem(content, date1));
+        //rateList.add(new RateItem(content, date1));
         RateManager manager = new RateManager(this);
 
-        manager.addAll(rateList);
+       // manager.addAll(rateList);
         adapter = new ArrayAdapter<String>(this, android.R.layout.simple_list_item_1, data);
         listView.setAdapter(adapter);
         for (RateItem item : manager.listAll()) {
@@ -57,12 +57,12 @@ public class NoteActivity extends AppCompatActivity implements AdapterView.OnIte
         Log.i(TAG, "onItemClick: parent" + parent);
         adapter.remove(parent.getItemAtPosition(position));
         adapter.notifyDataSetChanged();
-//        RateManager manager = new RateManager(this);
+        RateManager manager = new RateManager(this);
+
+        manager.delete(position);
+//        //manager.deleteAll();
+//        adapter.remove(data);
 //
-//        manager.delete(position);
-        //manager.deleteAll();
-
-
 //        for (RateItem item : manager.listAll()) {
 //            data.add(item.getCurName() + "     心得：" + item.getCurRate());
 //        }

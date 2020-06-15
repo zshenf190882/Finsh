@@ -31,7 +31,7 @@ public class AddActivity extends AppCompatActivity {
     EditText inp1;
     Button btn1;
     private String inp, cont;
-
+    List<RateItem> rateList = new ArrayList<RateItem>();
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -60,6 +60,10 @@ public class AddActivity extends AppCompatActivity {
                 //editor.putString("content", cont);
                 editor.commit();
                 Log.i(TAG, "shujuyibaocun");
+                rateList.add(new RateItem(cont,inp ));
+                RateManager manager = new RateManager(AddActivity.this);
+
+                manager.addAll(rateList);
                 Toast.makeText(AddActivity.this, "添加成功", Toast.LENGTH_SHORT).show();
                 Intent list = new Intent(AddActivity.this, UserActivity.class);
                 startActivity(list);
