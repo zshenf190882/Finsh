@@ -13,8 +13,9 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".Reader3Activity"></activity>
-        <activity android:name=".Reader2Activity"></activity>
+        <activity android:name=".Add2Activity"></activity>
+        <activity android:name=".Reader3Activity" />
+        <activity android:name=".Reader2Activity" />
         <activity android:name=".NoteActivity" />
         <activity android:name=".AddActivity" />
         <activity android:name=".ReaderActivity" />

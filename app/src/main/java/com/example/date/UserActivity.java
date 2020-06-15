@@ -39,6 +39,7 @@ public class UserActivity extends AppCompatActivity  {
     Button btn2 ;
     Button btn3;
     Button btn4;
+    Button btn5;
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         getMenuInflater().inflate(R.menu.addnote,menu);
@@ -53,7 +54,7 @@ public class UserActivity extends AppCompatActivity  {
         btn2= (Button)findViewById(R.id.book2);
         btn3= (Button)findViewById(R.id.book3);
         btn4= (Button)findViewById(R.id.zhuan);
-
+        btn5= (Button)findViewById(R.id.tian);
 
 
 
@@ -80,7 +81,11 @@ public class UserActivity extends AppCompatActivity  {
         startActivity(config);
 
     }
+    public void btnClick5(View btn5){
+        Intent config = new Intent(this, Add2Activity.class);
+        startActivity(config);
 
+    }
 
 
 

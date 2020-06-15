@@ -43,7 +43,7 @@ public class NoteActivity extends AppCompatActivity implements AdapterView.OnIte
         adapter = new ArrayAdapter<String>(this, android.R.layout.simple_list_item_1, data);
         listView.setAdapter(adapter);
         for (RateItem item : manager.listAll()) {
-            data.add(item.getCurName() + "     心得：" + item.getCurRate());
+            data.add("标题: "+item.getCurName() + "     心得：" + item.getCurRate());
         }
         //没有内容则显示文本框
         listView.setEmptyView(findViewById(R.id.nodata));
@@ -64,7 +64,7 @@ public class NoteActivity extends AppCompatActivity implements AdapterView.OnIte
 //        adapter.remove(data);
 //
 //        for (RateItem item : manager.listAll()) {
-//            data.add(item.getCurName() + "     心得：" + item.getCurRate());
+//            data.add("item.getCurName() + "     心得：" + item.getCurRate());
 //        }
     }
 
