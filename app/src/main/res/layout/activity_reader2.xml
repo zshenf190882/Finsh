@@ -11,18 +11,18 @@
         android:id="@+id/itemTitle"
         android:layout_width="471dp"
         android:layout_height="33dp"
-        android:background="@mipmap/aaaa"
+        android:background="@mipmap/aas"
         android:text="@string/app_name"
-        android:textColor="@color/pink"
+        android:textColor="@color/design_default_color_secondary_variant"
         android:textSize="23sp" />
 
     <TextView
         android:id="@+id/itemDetail"
         android:layout_width="431dp"
         android:layout_height="22dp"
-        android:background="@mipmap/aaaa"
+        android:background="@mipmap/aas"
         android:gravity="end"
         android:text="@string/app_name"
-        android:textColor="@color/pink"
+        android:textColor="@color/white"
         android:textSize="10sp" />
 </LinearLayout>

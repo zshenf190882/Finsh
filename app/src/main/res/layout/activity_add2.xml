@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@mipmap/gh"
+    android:background="@mipmap/asd"
     android:orientation="vertical"
     tools:context=".Add2Activity">
 
@@ -14,6 +14,7 @@
         android:layout_height="wrap_content"
         android:gravity="center"
         android:text="@string/shou"
+        android:textColor="@color/design_default_color_secondary_variant"
         android:textSize="30dp" />
 
     <EditText
@@ -36,6 +37,8 @@
     <Button
         android:id="@+id/btn"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="59dp"
+        android:background="@mipmap/cc"
+        android:textColor="@color/white"
         android:text="@string/btn_w" />
 </LinearLayout>

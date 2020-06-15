@@ -22,17 +22,17 @@ public class LoginActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login);
-        Button btn3 =(Button)findViewById(R.id.button2);
+
         init();
     }
-    public void btnClick2 (View btn3){
-        openConfig2();
-
-    }
-    private void openConfig2() {
-        Intent config2 = new Intent(this, RegisterActivity.class);
-        startActivity(config2);
-    }
+//    public void btnClick2 (View btn3){
+//        openConfig2();
+//
+//    }
+//    private void openConfig2() {
+//        Intent config2 = new Intent(this, RegisterActivity.class);
+//        startActivity(config2);
+//    }
 
     private void init() {
 

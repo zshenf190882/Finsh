@@ -4,20 +4,20 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@mipmap/zhuc"
+    android:background="@mipmap/lva"
     android:orientation="vertical"
     tools:context=".RegisterActivity">
 
 
     <EditText
         android:id="@+id/user"
-        android:layout_width="wrap_content"
-        android:layout_height="47dp"
+        android:layout_width="360dp"
+        android:layout_height="54dp"
         android:layout_centerVertical="true"
         android:layout_marginLeft="15dp"
-        android:layout_marginTop="200dp"
+        android:layout_marginTop="230dp"
         android:layout_marginRight="15dp"
-        android:background="@mipmap/aaaa"
+        android:background="@android:drawable/button_onoff_indicator_on"
         android:gravity="center"
         android:hint="@string/hint_uers"
         android:textColor="@color/colorPrimary"
@@ -25,12 +25,12 @@
 
     <EditText
         android:id="@+id/password"
-        android:layout_width="wrap_content"
-        android:layout_height="56dp"
+        android:layout_width="366dp"
+        android:layout_height="60dp"
         android:layout_marginLeft="15dp"
         android:layout_marginTop="20dp"
         android:layout_marginRight="15dp"
-        android:background="@mipmap/aaaa"
+        android:background="@android:drawable/button_onoff_indicator_on"
         android:gravity="center"
         android:hint="@string/hint_passwords"
         android:inputType="textPassword"
@@ -39,12 +39,12 @@
 
     <EditText
         android:id="@+id/password1"
-        android:layout_width="wrap_content"
-        android:layout_height="51dp"
+        android:layout_width="362dp"
+        android:layout_height="58dp"
         android:layout_marginLeft="15dp"
         android:layout_marginTop="20dp"
         android:layout_marginRight="15dp"
-        android:background="@mipmap/aaaa"
+        android:background="@android:drawable/button_onoff_indicator_on"
         android:gravity="center"
         android:hint="@string/hint_again"
         android:inputType="textPassword"
@@ -53,14 +53,16 @@
 
     <Button
         android:id="@+id/btn_register"
-        android:layout_width="match_parent"
-        android:layout_height="48dp"
+        android:layout_width="360dp"
+        android:layout_height="58dp"
         android:layout_below="@id/password_input"
         android:layout_centerHorizontal="true"
+        android:layout_marginLeft="15dp"
         android:layout_marginTop="20dp"
-        android:background="@mipmap/ty"
+        android:layout_marginRight="15dp"
+        android:background="@android:drawable/button_onoff_indicator_off"
         android:text="@string/register"
-        android:textColor="@android:color/holo_purple"
+        android:textColor="@android:color/holo_green_light"
         android:textSize="25sp" />
 
 

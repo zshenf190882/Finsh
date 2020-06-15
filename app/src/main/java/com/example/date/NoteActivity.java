@@ -15,7 +15,7 @@ import android.widget.ListView;
 import java.util.ArrayList;
 import java.util.List;
 
-public class NoteActivity extends AppCompatActivity implements AdapterView.OnItemClickListener{
+public class NoteActivity extends AppCompatActivity {
     String content;
     String date1;
     List<String> data = new ArrayList<String>();
@@ -48,18 +48,18 @@ public class NoteActivity extends AppCompatActivity implements AdapterView.OnIte
         //没有内容则显示文本框
         listView.setEmptyView(findViewById(R.id.nodata));
         //点击事件
-        listView.setOnItemClickListener(this);
+      //  listView.setOnItemClickListener(this);
     }
 
-    @Override
-    public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
-        Log.i(TAG, "onItemClick: position" + position);
-        Log.i(TAG, "onItemClick: parent" + parent);
-        adapter.remove(parent.getItemAtPosition(position));
-        adapter.notifyDataSetChanged();
-        RateManager manager = new RateManager(this);
-
-        manager.delete(position);
+//    @Override
+//    public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+//        Log.i(TAG, "onItemClick: position" + position);
+//        Log.i(TAG, "onItemClick: parent" + parent);
+//        adapter.remove(parent.getItemAtPosition(position));
+//        adapter.notifyDataSetChanged();
+//        RateManager manager = new RateManager(this);
+//
+//        manager.delete(position);
 //        //manager.deleteAll();
 //        adapter.remove(data);
 //
@@ -87,4 +87,4 @@ public class NoteActivity extends AppCompatActivity implements AdapterView.OnIte
 //        return true;
 //        //return false;
 //    }
-}
+
