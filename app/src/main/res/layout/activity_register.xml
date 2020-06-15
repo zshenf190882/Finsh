@@ -55,7 +55,7 @@
         android:id="@+id/btn_register"
         android:layout_width="360dp"
         android:layout_height="58dp"
-        android:layout_below="@id/password_input"
+        android:layout_below="@id/password1"
         android:layout_centerHorizontal="true"
         android:layout_marginLeft="15dp"
         android:layout_marginTop="20dp"

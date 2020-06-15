@@ -37,8 +37,8 @@ public class LoginActivity extends AppCompatActivity {
     private void init() {
 
         btn=findViewById(R.id.btn_login);
-        user_input=findViewById(R.id.user_input);
-        password_input=findViewById(R.id.password_input);
+        user_input=findViewById(R.id.user1);
+        password_input=findViewById(R.id.passwordd);
 
         btn.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -46,7 +46,7 @@ public class LoginActivity extends AppCompatActivity {
 
                 uerName=user_input.getText().toString().trim();
                 password=password_input.getText().toString().trim();
-                SharedPreferences sp=getSharedPreferences("loginInfo", MODE_PRIVATE);
+                SharedPreferences sp=getSharedPreferences("login", MODE_PRIVATE);
                 uer=sp.getString("userName","");
                 pas=sp.getString("psw","");
 //                Log.i(TAG,pas);

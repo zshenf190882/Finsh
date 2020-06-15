@@ -17,7 +17,7 @@ public class RegisterActivity extends AppCompatActivity {
     private EditText user;
     private EditText password;
     private EditText password1;
-    private String userName, psw, pswAgain, uer;
+    private String userName, psw, psw1, uer;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -36,8 +36,8 @@ public class RegisterActivity extends AppCompatActivity {
             public void onClick(View v) {
                 userName = user.getText().toString().trim();
                 psw = password.getText().toString().trim();
-                pswAgain = password1.getText().toString().trim();
-                SharedPreferences sp = getSharedPreferences("loginInfo", MODE_PRIVATE);
+                psw1 = password1.getText().toString().trim();
+                SharedPreferences sp = getSharedPreferences("login", MODE_PRIVATE);
                 uer = sp.getString("userName", "");
 
                 if (userName.length() <= 0) {
@@ -46,10 +46,10 @@ public class RegisterActivity extends AppCompatActivity {
                 } else if (psw.length() <= 0) {
                     Toast.makeText(RegisterActivity.this, "请输入密码", Toast.LENGTH_SHORT).show();
                     return;
-                } else if (pswAgain.length() <= 0) {
+                } else if (psw1.length() <= 0) {
                     Toast.makeText(RegisterActivity.this, "请再次输入密码", Toast.LENGTH_SHORT).show();
                     return;
-                } else if (!psw.equals(pswAgain)) {
+                } else if (!psw.equals(psw1)) {
                     Toast.makeText(RegisterActivity.this, "输入两次的密码不一样", Toast.LENGTH_SHORT).show();
                     return;
                 } else if (userName.equals(uer)) {
@@ -57,7 +57,7 @@ public class RegisterActivity extends AppCompatActivity {
                     return;
                 } else {
                     Toast.makeText(RegisterActivity.this, "注册成功", Toast.LENGTH_SHORT).show();
-                    SharedPreferences sp2 = getSharedPreferences("loginInfo", MODE_PRIVATE);
+                    SharedPreferences sp2 = getSharedPreferences("login", MODE_PRIVATE);
                     SharedPreferences.Editor editor = sp2.edit();
                     editor.putString("userName", userName);
                     editor.putString("psw", psw);
